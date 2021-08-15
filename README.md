@@ -5,7 +5,7 @@ docker volume create rabbitmq
 docker run -d --hostname my-rabbit --mount source=rabbitmq,target=/var/lib/rabbitmq --name some-rabbit rabbitmq:3.9.3-management
 ```
 Create go project:
-``
+```
 mkdir go-rabbitmq && cd go-rabbitmq
 go mod init github.com/germondc/go-rabbitmq
 mkdir send && cd send
